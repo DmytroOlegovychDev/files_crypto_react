@@ -1,36 +1,33 @@
-# OTE Landing Page (React + Tailwind CSS)
+# Open Trading Exchange
+
+---
 
 ## Overview
 
-OTE Landing Page is a modern and responsive landing page for a fictional cryptocurrency trading platform built with React and Tailwind CSS. The project showcases responsive layouts, reusable React components, animated UI elements, and a clean design suitable for modern SaaS and fintech websites.
-
-This project demonstrates component-based architecture, responsive web design, and modern frontend development practices.
+Open Trading Exchange is a responsive trading platform landing page built with React and Tailwind CSS.  
+The project includes multiple sections such as hero, analytics, pricing cards, newsletter subscription, and footer with a modern UI design.
 
 ---
 
 ## Features
 
-- Responsive navigation bar
-- Mobile menu with toggle animation
-- Hero section with animated typing effect
-- Analytics section
-- Pricing cards
+- Responsive navigation with mobile menu
+- Interactive modal notifications
+- Hero section with typing animation
+- Analytics section with responsive content layout
+- Pricing cards with hover animations
 - Newsletter subscription section
-- Footer with social media icons
-- Fully responsive design
-- Modern UI built with Tailwind CSS
-- Reusable React components
+- Responsive footer with social media icons
 
 ---
 
 ## Tech Stack
 
 - React
-- JavaScript (ES6+)
-- Vite
 - Tailwind CSS
 - React Icons
 - React Typed
+- JavaScript (ES6+)
 
 ---
 
@@ -39,81 +36,98 @@ This project demonstrates component-based architecture, responsive web design, a
 ```text
 src/
 ├── assets/
-│   ├── laptop.jpg
-│   ├── single.png
 │   ├── double.png
-│   └── triple.png
+│   ├── single.png
+│   ├── triple.png
+│   └── laptop.jpg
 │
 ├── components/
+│   ├── Navbar.jsx
+│   ├── Hero.jsx
 │   ├── Analytics.jsx
+│   ├── Newsletter.jsx
 │   ├── Cards.jsx
 │   ├── Footer.jsx
-│   ├── Hero.jsx
-│   ├── Navbar.jsx
-│   └── Newsletter.jsx
+│   └── Modal.jsx
 │
-├── App.jsx
-├── main.jsx
+├── App.js
+├── index.js
 └── index.css
 ```
 
----
+⸻
+
+## Core Logic
+
+### Main Logic
+
+The application is built using reusable React components that represent separate sections of the landing page.
+
+* React components are used to organize the interface into independent sections
+* React state controls modal visibility and interactive elements
+* Conditional rendering is used for dynamic UI components
+* Tailwind CSS utilities handle responsive layouts and styling
+
+⸻
+
+## Performance Optimizations
+
+* Component-based architecture for better maintainability
+* Reusable UI components to reduce code duplication
+* Optimized local asset usage
+* Responsive design using Tailwind CSS utilities
+
+⸻
 
 ## UI / UX
 
-- Modern fintech-inspired design
-- Smooth hover animations
-- Responsive layout
-- Clean typography
-- Consistent color palette
-- Mobile-first approach
+* Modern trading platform interface
+* Fully responsive design for desktop and mobile devices
+* Smooth hover effects and transitions
+* Interactive buttons and navigation elements
+* Clean pricing card layout
 
----
+⸻
 
 ## Getting Started
 
-### Install dependencies
+Install dependencies
 
 ```bash
 npm install
 ```
 
-### Run development server
+Run development server
 
 ```bash
-npm run dev
+npm start
 ```
 
-### Build for production
+Build for production
 
 ```bash
 npm run build
 ```
 
----
+⸻
 
 ## Future Improvements
 
-- Dark mode
-- Animated page transitions
-- FAQ section
-- Testimonials carousel
-- Contact form integration
-- Authentication pages
-- API integration
-- Multi-language support
-- Pricing calculator
+* Add real trading functionality
+* Connect newsletter form with backend service
+* Improve component reusability
+* Add additional animations and interactions
 
----
+⸻
 
 ## Author
 
-**Dmytro**
+Dmytro
 
-Frontend Developer (React)
+Frontend Developer (React / TypeScript)
 
----
+⸻
 
 ## Notes
 
-This project focuses on responsive frontend development using React and Tailwind CSS. It demonstrates reusable component architecture, responsive layouts, modern UI practices, and interactive user experience suitable for landing pages and SaaS platforms.
+This project demonstrates the development of a responsive React landing page using reusable components, React state management, and Tailwind CSS for modern UI implementation.
